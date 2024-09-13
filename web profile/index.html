@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family:  Verdana, sans-serif;
+            background-color: #fff9c430;
+            scroll-behavior: smooth;
+        }
+
+        .banner {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 40px;
+            padding: 10px 80px 10px 70px;
+            font-weight: bold;
+            color: white;
+            background-color: #262624;
+            letter-spacing: 2px;
+            height: 60px;
+        }
+
+        span {
+            color: #f9d64c;
+        }
+		nav {
+		     
+		    flex-direction: column;
+		    gap: 40px; 
+		  }
+
+		nav a {
+		    color: white;
+		    text-decoration: none;
+		    font-size: 20px;
+		    font-weight: normal;
+		    transition: color 1s;
+		    margin: 0 25px;
+
+    
+		}
+
+		nav a:hover {
+		    color: #f9d64c;
+		    border-bottom: 3px solid #f9d64c;
+		    transition: color 1s;
+
+		}
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        	
+        }
+
+        img {
+            max-width: 45%;
+            height: auto;
+            margin: 30px;
+        }
+
+        .info {
+            flex: 1;
+            text-align: left;
+            min-width: 500px;
+            padding: 20px;
+            margin-top: 110px;
+        }
+
+        .info-1 {
+            font-size: 40px;
+        }
+
+        .info-2 {
+            font-size: 30px;
+            margin-top: -40px;
+        }
+
+        .info-3 {
+            font-size: 20px;
+            text-align: justify;
+            max-width: 700px;
+            margin: 20px 0;
+            margin-top: 60px;
+            white-space: ;
+        }
+
+        .about {
+            margin: 100px 0;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            float: right;
+        }
+
+        .about a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .section {
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+            align-items: center;
+        }
+
+        #skills, #contact {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 120px;
+            }
+
+            .info {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .about {
+                margin: 20px auto;
+            }
+        }
+        .title {
+        	text-align: center;
+        	font-size: 30px;
+        	font-weight: bold;
+        }
+        .content{
+        	width: 1000px;
+        	text-align: justify;
+        	font-size: 20px;
+
+        }
+       	section .content{
+       		margin-left: 200px;
+       	}
+       	.title-1{
+       		font-size: 20px;
+       		font-weight: bold;
+       	}
+       	#about .title-1, li{
+       		margin-left: 200px;
+       		font-size: 18px;
+       	}
+
+       	#contact {
+    		text-align: center; 
+  		}
+
+		.contact-icons {
+    		display: flex; 
+    		justify-content: center;
+    		gap: 20px; 
+		}
+
+		.contact-item {
+    		display: flex; 
+   			flex-direction: column;
+    		align-items: center; 
+		}
+
+		.contact-item img {
+    		width: 50px; 
+    		height: auto;
+		}
+
+		.contact-item p {
+    		margin-top: 5px;
+    		font-size: 14px;
+		}
+
+		footer{
+			background-color: black;
+			color: white;
+			padding: 1px;
+			text-align: center;
+			margin-top: 25px;
+		}
+    </style>
+
+</head>
+<body>
+    <div class="banner">
+        <p>My <span>Profile</span></p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container" id="home">
+        <img src="img/yelloww.PNG" alt="Profile Picture">
+
+        <div class="info">
+            <div class="info-1">
+                <p>Hello!</p>
+            </div>
+            <div class="info-2">
+                <p>I am <span>Trisha Benedicto</span></p>
+            </div>
+            <div class="info-3">
+                <p>Fourth Year Student taking Bachelor of Science in Information Student, Welcome to my Profile.</p>
+                
+            </div>
+
+            <div class="about">
+                <a href='#about'>Know more about me!  →</a>
+            </div>
+        </div>
+    </div>
+
+    <section class ="section" id="about">
+         <p class="title">About Me</p>
+        	<p class="content">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp I am a simple student studying Bachelor of Science in Information Technology.There are four of us in the family: my mother, father, me, and my sibling. I am the eldest among the siblings. I live in Malitbog, Bongabong, Oriental Mindoro. Im 21 years old. I was born on December 14, 2002. My ultimate aspiration is to achieve success and live a happy life, driven by my belief that "Life is short, make it count." </p>
+
+         <p class="title-1">Eductional Background</p>
+         <li>Elementary: Felimon Mulawin Salcedo Memorial School(S.Y 2014-2015)</li>
+         <li>Junior High School: Eastern Mindoro College(S.Y 2018-2019)</li>
+         <li>Senior High School: Innovative College of Science & Technology(S.Y 2020-2021)</li>
+         <li>College:Innovative College of Science & Technology(current)</li>
+
+          <p class="title-1">Hobbies</p>
+         <li>Wacthing Videos</li>
+         <li>Playing Online Games</li>
+         <li>Scrolling in Social Media</li>
+         <li>Reading</li>
+    </section>
+
+
+   <section id="contact">
+    <p class="title">Contacts</p>
+    <div class="contact-icons">
+        <div class="contact-item">
+            <img src="img/fb.png" alt="Facebook">
+            <p>Facebook<br>Trisha Benedicto</p>
+
+        </div>
+        <div class="contact-item">
+            <img src="img/insta.png" alt="Instagram">
+            <p>Instagram<br>@trixzsk</p>
+        </div>
+        <div class="contact-item">
+            <img src="img/gmail.png" alt="Gmail">
+            <p>Gmail<br>trishabenedicto14@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <img src="img/phone.png" alt="Phone">
+            <p>Phone Number<br>09918245340</p>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <p>&copy; 2024 Trisha Benedicto. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
